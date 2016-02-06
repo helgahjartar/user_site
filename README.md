@@ -9,7 +9,7 @@ A project for the course Web Programming taught at the University of Iceland in 
 http://verkefnisexy.herokuapp.com/
 
 ### Developement 
-You'll need npm and bower installed.
+You'll need npm and node installed.
   
   1. npm install
   2. bower install
