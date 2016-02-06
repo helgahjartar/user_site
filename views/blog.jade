@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h3!= greeting
+  p
+    .left
+      p Hér getur þú sett inn einhverja færslu: 
+        form(method="post")
+          p
+            textarea(id="name", type="text", name="blog")
+            p
+              input(type="submit" value="Senda inn færslu").btn

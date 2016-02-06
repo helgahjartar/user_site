@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h4 Innskráning
+  
+  form(method="post")
+    if error
+      p Notendanafn/lykilorð er vitlaust slegið inn.
+    fieldset.form-group
+      label(for="username") Notendanafn:
+      input(id="username" type="text" placeholder="Notendanafn" name="username" required).form-control
+    fieldset.form-group
+      label(for="password") Lykilorð:
+      input(id="password" type="password" name="password" placeholder="lykilorð" required).form-control
+    input(type="submit").form-control
+

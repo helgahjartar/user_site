@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h3!= greeting 
+  p
+    p Hér getur þú sett inn eitthvað skemmtilegt sem þér dettur í hug: 
+      form(method="post")
+        p
+          textarea(id="entry", type="text", name="entry").form-control
+          p
+            input(type="submit" value="Senda inn færslu").form-control
+  p
+    if entries
+      p Hér getur þú séð færslur sem áður hafa verið gerðar:
+      ul
+        each e in entries
+          label.btn-lg
+            p= e.username 
+            h5= e.date
+            h4= e.text
+
+
